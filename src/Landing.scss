@@ -1,167 +1,231 @@
 .Landing {
+  padding: 0 155px;
+  max-width: 1440px;
+  margin: 0 auto;
+  @media (max-width: 1400px) {
+    padding: 0 105px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 65px;
+  }
+  @media (max-width: 550px) {
+    padding: 0 35px;
+  }
   .Landing__Header {
-    padding: 65px 0 0 0;
-    margin: 0 auto;
-    text-align: center;
-    @media(max-width: 550px) {
-      padding: 0;
+    padding: 100px 0 0 0;
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    min-height: 750px;
+    @media (max-width: 768px) {
+      padding: 65px 0 0 0;
+    }
+    @media (max-width: 550px) {
+      padding: 35px 0 0 0;
+    }
+    .Landing__Header-Text {
+      width: 100%;
+      max-width: 515px;
+      z-index: 1;
+      position: relative;
+      @media (max-width: 768px) {
+        max-width: 400px;
+      }
+    }
+    .Landing__Header-Main-Text {
+      margin-top: 155px;
+      @media (max-width: 768px) {
+        margin-top: 400px;
+      }
     }
     h1 {
+      margin: 0 auto;
+      font-size: 84px;
+      letter-spacing: 0;
+      @media (max-width: 768px) {
+        font-size: 64px;
+      }
+      @media (max-width: 550px) {
+        font-size: 56px;
+      }
+    }
+  }
+  .Landing__Header-Illo {
+    width: 64%;
+    max-width: 1200px;
+    position: absolute;
+    right: -90px;
+    top: 90px;
+    @media (max-width: 1400px) {
+      bottom: 0;
+      top: unset;
+    }
+    @media (max-width: 992px) {
+      bottom: -60px;
+    }
+    @media (max-width: 768px) {
+      bottom: unset;
+      top: 0;
+      width: 500px;
+    }
+    @media (max-width: 550px) {
+      width: 400px;
+      right: 0;
+      left: 0;
+      top: 85px;
+    }
+  }
+  .Landing__Header-About {
+    width: 100%;
+    background: #000000;
+    border-radius: 50px;
+    padding: 150px 115px;
+    box-sizing: border-box;
+    margin-top: 95px;
+    @media (max-width: 992px) {
+      padding: 104px 65px;
+    }
+    @media (max-width: 768px) {
+      padding: 64px 36px;
+    }
+    .Landing__Header-About-Heading {
+      color: #ffffff;
+    }
+  }
+  .Landing__Use-Cases {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 195px;
+    .Landing__Use-Case-Heading {
+      text-align: left;
+      max-width: 700px;
+      margin: 0;
+    }
+    .Landing__Use-Case-Title {
+      margin: 0;
+    }
+    .Landing__Use-Case {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      margin: 100px auto;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .Landing__Use-Case-Illo-Container {
+        width: 45%;
+        background: #ffffff;
+        padding: 0 40px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        border: 10px solid black;
+        @media (max-width: 1200px) {
+          height: 600px;
+        }
+        @media (max-width: 992px) {
+          height: 500px;
+          width: 100%;
+          margin-bottom: 48px;
+        }
+        .Landing__Use-Case-Illo {
+          width: 100%;
+          max-width: 300px;
+          @media (max-width: 1200px) {
+            max-width: 250px;
+          }
+          @media (max-width: 992px) {
+            max-width: 190px;
+          }
+        }
+      }
+      .Landing__Use-Case-Text-Container {
+        width: 45%;
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .Landing__Header-About-Questions {
+    .Landing__Questions-Heading {
+      color: #ffffff;
+    }
+  }
+
+  .Landing__Questions-Heading {
+    margin-bottom: 0;
+    text-align: center;
+    @media (max-width: 768px) {
+      margin: 100px 0 0 0;
+    }
+  }
+  .Landing__Question {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 65px auto;
+    padding: 65px 0 0 0;
+    max-width: 600px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
       margin-bottom: 0;
     }
     h3 {
-      margin: 35px auto 50px auto;
-      max-width: 685px;
-      @media(max-width: 768px) {
-        max-width: 400px;
+      max-width: 100%;
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #ffffff;
+      @media (max-width: 768px) {
+        margin-bottom: 10px;
+        margin-right: 0;
       }
     }
-  }
-  .Landing__Dots-Container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 25px auto;
-    width: 45px;
-    .Landing__Dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 100%;
-      &--Red {
-        background: #FF0000;
-      }
-      &--Blue {
-        background: #1157BE;
-      }
-      &--Yellow {
-        background: #FFC300;
-      }
-    }
-  }
-  .Landing__Header-Companies {
-    width: 100%;
-    max-width: 855px;
-    margin: 50px auto 0 auto;
-    .Landing__Header-Companies-Heading {
-      width: 100%;
-      text-align: center;
-    }
-    .Landing__Header-Company-Logos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 35px;
-      @media(max-width: 768px) {
-        justify-content: center;
-      }
-      .Landing__Company-Logo-Container {
-        width: 20%;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 80px;
-        @media(max-width: 768px) {
-          width: 40%;
-        }
-      }
-      .Landing__Company-Logo {
-        height: auto;
-        max-width: 90%;
-        &--SM {
-          width: 45px;
-        }
-        &--MD {
-          width: 70px;
-        }
-        &--RG {
-          width: 100px;
-        }
-      }
+    p {
+      margin: 0;
+      max-width: 100%;
+      color: #ffffff;
     }
   }
   .Landing__Questions-Container {
-    margin: 150px auto 0 auto;
-    @media(max-width: 768px) {
-      margin: 50px auto 0 auto;
-    }
-    .Landing__Questions-Heading {
-      margin-bottom: 0;
-      @media(max-width: 550px) {
-        max-width: 400px;
-      }
-    }
-    .Landing__Question {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-around;
-      margin: 25px 0;
-      @media(max-width: 768px) {
-        flex-direction: column;
-        margin: 30px 0
-      }
-      &:first-child {
-        margin-top: 0;
-      }
-      &:last-child {
-        margin-bottom: 0;
-      }
-      h3 {
-        max-width: 35%;
-        margin-right: 25px;
-        margin-top: 0;
-        @media(max-width: 768px) {
-          max-width: 75%;
-          margin-bottom: 10px;
-          margin-right: 0;
-        }
-      }
-      p {
-        margin: 0;
-        max-width: 50%;
-        @media(max-width: 768px) {
-          max-width: 75%;
-        }
-      }
-    }
-    .Landing__Dots-Container {
-      margin: 50px auto;
-    }
-  }
-  .Landing__Questions-Container,.Landing__Header-Companies,.Landing__Header {
     width: 100%;
     max-width: 925px;
-    @media(max-width: 992px) {
-      width: calc(100% - 60px);
+    @media (max-width: 992px) {
+      width: 90%;
       max-width: 100%;
     }
   }
   .Landing__End {
-    background: #191919;
     margin: 150px 0 0 0;
     padding: 150px 50px;
-    @media(max-width: 768px) {
-      margin: 50px 0 0 0;
-      padding: 100px 50px;
+    text-align: center;
+    @media (max-width: 768px) {
+      margin: 100px 0 0 0;
+      padding: 100px 0;
     }
     &--Inner {
       max-width: 925px;
       margin: 0 auto;
     }
     h2 {
-      margin: 0;
-      &:first-child {
-        @media(max-width: 768px) {
-          margin-bottom: 10px;
-        }
+      margin-right: 15px;
+      @media (max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
       }
-    }
-    h4 {
-      @media(max-width: 768px) {
-        max-width: 300px;
+      @media (max-width: 550px) {
+        line-height: 1.16667;
+        font-size: 32px;
       }
     }
   }

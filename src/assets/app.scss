@@ -1,85 +1,136 @@
-@import "./fonts/Inter/inter.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 @mixin transition-standard($property) {
-  -webkit-transition: $property 0.1s cubic-bezier(0.4, 0.0, 0.2, 1);
-  -o-transition: $property 0.1s cubic-bezier(0.4, 0.0, 0.2, 1);
-  transition: $property 0.1s cubic-bezier(0.4, 0.0, 0.2, 1);
+  -webkit-transition: $property 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: $property 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: $property 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@font-face {
+  font-family: "PPEditorialNew";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("./fonts/PPEditorialNew/PPEditorialNew-Ultralight.woff")
+      format("woff"),
+    url("./fonts/PPEditorialNew/PPEditorialNew-Ultralight.woff2")
+      format("woff2");
+}
+@font-face {
+  font-family: "PPEditorialNew";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("./fonts/PPEditorialNew/PPEditorialNew-UltralightItalic.woff")
+      format("woff"),
+    url("./fonts/PPEditorialNew/PPEditorialNew-UltralightItalic.woff2")
+      format("woff2");
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "PPEditorialNew", serif;
+  font-weight: 100;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background: #f7f0eb;
 }
 
 h1 {
-  font-size: 96px;
-  line-height: 87px;
-  color: #000000;
-  font-weight: 900;
+  font-size: 110px;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: #1d1d1f;
   &.White {
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  @media(max-width: 768px) {
+  @media (max-width: 768px) {
+    font-size: 86px;
+  }
+  @media (max-width: 550px) {
     font-size: 74px;
-    line-height: 78px;
+    line-height: 1.2;
   }
 }
 
 h2 {
-  font-size: 58px;
-  line-height: 64px;
-  color: #000000;
-  font-weight: 900;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 62px;
+  letter-spacing: 0;
   &.White {
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  @media(max-width: 768px) {
-    font-size: 48px;
+  @media (max-width: 768px) {
+    font-size: 42px;
     line-height: 50px;
+  }
+  @media (max-width: 550px) {
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 30px;
-  color: #000000;
-  font-weight: 300;
-  letter-spacing: -0.2px;
+  font-size: 36px;
+  line-height: 1.16667;
+  color: #1d1d1f;
+  font-style: normal;
+  letter-spacing: -1px;
   &.Bold {
     font-weight: 700;
   }
   &.White {
-    color: #FFFFFF;
+    color: #ffffff;
+  }
+  @media (max-width: 550px) {
+    font-size: 32px;
   }
 }
 
 h4 {
   font-size: 18px;
   line-height: 22px;
-  color: #000000;
-  font-weight: 400;
+  color: #1d1d1f;
   &.White {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
 p {
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
   font-weight: 400;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  color: #373737;
   &.White {
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 
 a {
-  font-size: 18px;
-  line-height: 22px;
-  color: #1157BE;
-  font-weight: 900;
-  text-decoration: none;
-  border-bottom: 2px solid rgba(17,87,190,0);
+  color: #1d1d1f;
+  text-decoration: underline;
+  border-bottom: 2px solid rgba(17, 87, 190, 0);
   @include transition-standard(border-bottom);
   &:focus {
-    color: #1157BE;
+    color: #888;
   }
   &:hover {
-    border-bottom: 2px solid #1157BE;
+    text-decoration: none;
   }
+}
+
+.Color-Black {
+  color: #1d1d1f;
 }

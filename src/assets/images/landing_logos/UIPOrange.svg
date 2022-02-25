@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 375 211" style="enable-background:new 0 0 375 211;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;opacity:0.42;fill:#FF00FF;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{clip-path:url(#SVGID_4_);fill:#FA4616;}
+</style>
+<rect x="81.5" y="67.5" class="st0" width="212" height="75"/>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="86.5" y="68" width="212" height="75"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<g class="st1">
+			<defs>
+				<rect id="SVGID_3_" x="86.5" y="68" width="212" height="75"/>
+			</defs>
+			<clipPath id="SVGID_4_">
+				<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+			</clipPath>
+			<path class="st2" d="M86.5,68H162v75H86.5V68z M94.3,135.2h59.8V75.8H94.3V135.2z M124.5,87.3h7.8v22.7
+				c0,10.3-5.9,16.5-15.7,16.5c-9.7,0-15.4-6.1-15.4-16.5V87.3h7.8v22.7c0,5.7,2.4,9.1,7.8,9.1c5.2,0,7.7-3.3,7.7-9.1V87.3z
+				 M147.2,87.3c0,2.8-2,4.6-4.8,4.6s-4.8-1.9-4.8-4.6c0-2.8,2-4.8,4.8-4.8S147.2,84.5,147.2,87.3 M138.5,95.7h7.8v30.5h-7.8V95.7z
+				 M198.7,100.4c0,8.3-5.5,13.3-14,13.3h-7.1v12.5h-7.8V87.3h14.9C193.3,87.3,198.7,92.4,198.7,100.4 M190.8,100.4
+				c0-4.3-2.5-6.8-6.9-6.8h-6.2v13.8h6.2C188.3,107.4,190.8,104.9,190.8,100.4 M225,95.7h7.8v30.5H225v-3.4c-2.1,2.4-5.4,3.8-10,3.8
+				c-8.3,0-14.2-6.5-14.2-15.6c0-9,5.7-15.7,14.2-15.7c4.5,0,7.9,1.6,10,4.2V95.7z M225,110.9c0-5.3-3.1-8.9-8.1-8.9
+				c-5,0-8.1,3.4-8.1,8.9c0,5.1,2.8,8.8,8.1,8.8C221.6,119.7,225,116.3,225,110.9 M251.9,119.5h3.1v6.6h-4.1
+				c-7.4,0-10.6-3.5-10.6-10.7v-13.2h-3.7v-6.6h3.7v-8.3h7.8v8.3h6.9v6.6H248v13.3C248,118.2,248.8,119.5,251.9,119.5 M288.7,108.4
+				v17.7h-7.8v-16.8c0-4.6-2.4-7.6-7-7.6c-4.6,0-7.4,3.1-7.4,8.3v16.2h-7.8V85.5h7.8v13.3c2-2.3,5-3.6,9.3-3.6
+				C283,95.2,288.7,100.4,288.7,108.4 M287,85.5h4.1v0.8h-1.5v4.8h-1v-4.8H287V85.5z M298.5,85.5v5.6h-0.9v-4.3l-1.8,4.3H295
+				l-1.8-4.3v4.3h-0.9v-5.6h1.2l1.8,4.4l2-4.4H298.5z"/>
+		</g>
+	</g>
+</g>
+</svg>
